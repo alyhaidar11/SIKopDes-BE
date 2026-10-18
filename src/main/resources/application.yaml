@@ -3,7 +3,7 @@ spring:
     import: optional:file:.env[.properties]
 
   application:
-    name: sikopdes-1906350553-be
+    name: sikopdes-2406425804-be
 
   datasource:
     url: ${DB_URL}
