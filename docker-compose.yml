@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: sikopdes
 
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5440:5432"
 
     volumes:
       - sikopdes-postgres-data:/var/lib/postgresql/data
