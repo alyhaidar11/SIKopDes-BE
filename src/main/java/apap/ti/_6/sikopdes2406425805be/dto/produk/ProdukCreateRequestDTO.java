@@ -44,7 +44,6 @@ public class ProdukCreateRequestDTO {
         return hargaAnggota <= hargaNormal;
     }
 
-    // Mapper dari DTO ke entity. id dan statusAktif diisi di sini / di service
     public Produk toEntity(String id) {
         Produk produk = new Produk();
         produk.setId(id);

@@ -8,7 +8,6 @@ import apap.ti._6.sikopdes2406425805be.models.Gerai;
 
 public class GeraiDetailResponseDTO {
 
-    // Seluruh informasi Gerai
     private String id;
     private String kodeGerai;
     private String nama;
@@ -19,11 +18,9 @@ public class GeraiDetailResponseDTO {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Ringkasan persediaan
     private long jumlahRecordStok;
     private long jumlahProdukDenganStok;
 
-    // Maksimal lima transaksi terbaru
     private List<PenjualanResponseDTO> transaksiTerbaru;
 
     public GeraiDetailResponseDTO() {
@@ -56,7 +53,6 @@ public class GeraiDetailResponseDTO {
         this.transaksiTerbaru = transaksiTerbaru;
     }
 
-    // Mapper dari entity ke DTO, data ringkasan dihitung di service
     public static GeraiDetailResponseDTO fromEntity(
             Gerai gerai,
             long jumlahRecordStok,

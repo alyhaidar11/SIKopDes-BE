@@ -11,10 +11,8 @@ public class PenjualanCreateRequestDTO {
     @NotBlank(message = "Gerai wajib dipilih")
     private String geraiId;
 
-    // Opsional: null jika pembeli umum (bukan Anggota)
     private String anggotaId;
 
-    // @Valid agar anotasi di PenjualanItemRequestDTO ikut divalidasi
     @NotEmpty(message = "Minimal satu item harus dipilih")
     @Valid
     private List<PenjualanItemRequestDTO> items;

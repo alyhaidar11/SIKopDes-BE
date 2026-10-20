@@ -8,7 +8,6 @@ import apap.ti._6.sikopdes2406425805be.models.Produk;
 
 public class ProdukDetailResponseDTO {
 
-    // Seluruh informasi Produk
     private String id;
     private String kodeProduk;
     private String nama;
@@ -44,7 +43,6 @@ public class ProdukDetailResponseDTO {
         this.daftarStok = daftarStok;
     }
 
-    // Mapper dari entity ke DTO, daftar stok disiapkan di service
     public static ProdukDetailResponseDTO fromEntity(
             Produk produk,
             List<StokGeraiResponseDTO> daftarStok) {

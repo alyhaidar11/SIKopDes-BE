@@ -43,7 +43,6 @@ public class GeraiCreateRequestDTO {
         this.longitude = longitude;
     }
 
-    // Mapper dari DTO ke entity. id dan statusAktif diisi di sini / di service
     public Gerai toEntity(String id) {
         Gerai gerai = new Gerai();
         gerai.setId(id);
